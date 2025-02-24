@@ -1,0 +1,153 @@
+.mydetails {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 30px;
+    background: linear-gradient(135deg, #ffffff, #1b13e8);
+    color: white;
+    text-align: center;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+.mydetails:hover{
+    transform: translateY(-5px);
+}
+.hero {
+    height: 100vh;
+    background: url('https://source.unsplash.com/1600x900/?nature') center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+.hero img {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+.hero img:hover {
+    transform: translateX(-50%) scale(1.1);
+}
+.about-paragraph {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #333;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-left: 5px solid #6e8efb;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.about-paragraph:hover {
+    transform: scale(1.02);
+}
+.contact-container {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.contact-container:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.contact-container p {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+}
+
+.contact-container strong {
+    color: #007bff;
+    font-weight: bold;
+}
+
+.contact-containerr {
+    width: 100%;
+    max-width: 450px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    margin: auto;
+}
+
+.contact-containerr h2 {
+    margin-bottom: 15px;
+    font-size: 26px;
+    font-weight: 600;
+    color: #fff;
+}
+
+
+.contact-containerr input,
+.contact-containerr textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+}
+
+
+.contact-containerr input::placeholder,
+.contact-containerr textarea::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+
+.contact-containerr button {
+    background: #ff5f6d;
+    background: linear-gradient(135deg, #ff9966, #ff5e62);
+    color: white;
+    padding: 12px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.contact-containerr button:hover {
+    background: linear-gradient(135deg, #ff5e62, #ff9966);
+    transform: scale(1.05);
+}
+
+.contact-containerr #status {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
+}
+
+
+@media (max-width: 500px) {
+    .contact-containerr {
+        width: 90%;
+    }
+}
